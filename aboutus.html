@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TosJoin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            background-color: #003366;
+            color: white;
+            padding: 80px 200px;
+            text-align:left;
+        }
+
+        .hero-section h3 {
+            
+            font-size: 3rem ;
+        }
+
+        .hero-section p {
+            max-width: 700px;
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: left;
+            padding: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .mt-4{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #about-us,
+        .section,
+        or #about-content {
+            overflow: visible !important;
+            position: relative;
+
+        }
+
+        .section {
+            text-align: center;
+            width: 100%;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .section h2 {
+            color: #02386E;
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+
+        .intro {
+            color: #02386E;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #02386E;
+            font-weight: bold;
+        }
+
+        .custom-row{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .card {
+            background: #f5f5ff;
+            width: 500px;
+            min-height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-direction: column;
+            justify-content: space-between;
+            gap:10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 17px;
+            color: #444;
+            flex-grow: 1;
+        }
+
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #02386E;
+            color: white;
+            padding: 30px 0;
+            margin: 30px 0 0 0;
+            width:auto;
+            box-sizing: border-box;
+        }
+
+        .stat-item {
+            flex: 1 1 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            background-color: white;
+            color: #003366;
+            font-weight: bold;
+            padding: 10px 25px;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+            color: #012d5a;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="hero-section">
+        <h5 class=" text-left ">ABOUT US</h5>
+        <h3>
+            At <strong>TosJoin</strong> we bring ideas to life and <br /> turn moments into memories.
+        </h3>
+        <p class="mt-4 ">
+            As a full-service event management company, we specialize in creating unforgettable<br />
+            experiences—from corporate conferences and product launches to festivals and private celebrations.
+        </p>
+        <button class="btn btn-light mt-2">Join now</button>
+    </section>
+
+
+    <section id="about-us" class="section">
+        <h2>What We Offer</h2>
+        <p class="intro">
+            At <span class="highlight">TosJoin</span>, we make it easy to
+            <span class="highlight">discover</span>,
+            <span class="highlight">manage</span>, and
+            <span class="highlight">stay updated</span> on events—all in one place.
+        </p>
+
+        <div class="custom-row">
+            <div class="card">
+                <div class="container-py-5">
+                    <div class="row row-col-sm-2">
+                        <div class="col-sm ">
+                            <div class="icon">📅</div>
+                        </div>
+                        <div class="col-10 text-left mt-2">
+                            <div class="title">Real-Time Event Schedules</div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="description">View detailed schedules for upcoming events, including session times, speakers,
+                            performers, and locations—everything you need to stay on track.</div>
+            </div>
+        
+
+            <div class="card">
+                <div class="container-py-5">
+                    <div class="row row-cols-2">
+                        <div class="col-sm">
+                        <div class="icon">🎫</div>
+                        </div>
+                        <div class="col-10 text-left mt-2">
+                        <div class="title">Easy Registration & Booking</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">Register or reserve your spot for events with a simple, user-friendly
+                    interface.</div>
+            </div>
+
+            <div class="card">
+                <div class="container-py-5">
+                    <div class="row row-cols-2">
+                        <div class="col-sm">
+                            <div class="icon">🔔</div>
+                        </div>
+                            <div class="col-10 text-left mt-2">
+                                <div class="title">Notifications & Reminders</div>
+                            </div>
+                    </div>
+                </div>
+                        <div class="description">Get real-time updates, alerts, and reminders so you never miss an important
+                            moment.</div>
+            </div>
+
+            <div class="card">
+                <div class="container-py-5">
+                    <div class="row row-cols-2">
+                        <div class="col-sm">
+                            <div class="icon">📋</div>
+                        </div>
+                        <div class="col-10 text-left mt-2">
+                            <div class="title">Event Details All in One Place</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">From the agenda to speakers, FAQs to location info—you'll find everything
+                    clearly organized and easy to navigate.</div>
+            </div>
+        </div>
+    </section>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Events</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">78</div>
+                <div class="stat-label">Partners</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20,000+</div>
+                <div class="stat-label">Sells</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10,000</div>
+                <div class="stat-label">Followers</div>
+            </div>
+        </div>
+    
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

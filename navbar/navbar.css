@@ -1,0 +1,88 @@
+/* Navbar container */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: relative; /* needed for absolute nav links on mobile */
+  z-index: 1000;
+}
+
+/* Logo styling */
+.custom-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #02386E;
+  text-decoration: none;
+  font-family: Garamond, serif;
+}
+
+/* Nav links container */
+.custom-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual nav links */
+.custom-nav-link {
+  text-decoration: none;
+  color: #02386E;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #4A4A4A;
+}
+
+/* Hamburger toggle button */
+.custom-menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden by default, shown on mobile */
+  color: #02386E;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  /* Show toggle button */
+  .custom-menu-toggle {
+    display: block;
+  }
+
+  /* Hide nav links by default */
+  .custom-nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 60px; /* adjust if navbar height changes */
+    left: 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px 0;
+  }
+
+  /* Show nav links when active */
+  .custom-nav-links.active {
+    display: flex;
+  }
+
+  /* Mobile nav links styling */
+  .custom-nav-link {
+    padding: 10px 30px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+  }
+
+  /* Last nav link: remove border bottom */
+  .custom-nav-link:last-child {
+    border-bottom: none;
+  }
+}

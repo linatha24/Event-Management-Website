@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TosJoin</title>
+    <meta name="title" content="TosJoin | Innovation & Technology Event ">
+    <meta name="description" content="TosJoin — an immersive event showcasing future technology, creative startups, and groundbreaking innovations. ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar/navbar.css" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative text-center">
+        <img src="./img/BackgroundIMG.jpg" class="img-fluid w-100" alt="Event Background"
+            style="max-height: 600px; object-fit: cover;">
+        <div class="position-absolute top-60 start-50 translate-middle w-75 bg-white bg-opacity-75 p-4 rounded">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Search by name or type" />
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>Filter by</option>
+                        <option>Date</option>
+                        <option>Locations</option>
+                        <option>Event Types</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule container my-5">
+        <h2 class="text-center fw-bold mb-4">Schedule Details</h2>
+
+        <h3 class="mb-4 text-black fw-bold">Upcoming Events</h3>
+        <div class="row gy-4">
+
+            <!-- Event Card 1 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="./img/WebDevelopmentImage.jpeg" class="card-img-top"
+                        alt="Youth-Programming Competition" />
+                    <div class="card-body">
+                        <p class="card-text">Date: Jan 10, 2025 | Time: 10:00AM - 11:30AM | Location: Ballroom Extra
+                            Hotel</p>
+                        <h5 class="card-title text-primary">Youth-Programming Competition 2025</h5>
+                        <p class="card-text">A global coding contest for teens to solve real-world software tasks with
+                            open-source organizations.</p>
+                        <button class="btn btn-outline-primary add-to-cart fw-bold">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm bg-light">
+                    <img src="./img/cyber.png" class="card-img-top" alt="National Cyber Security Competition" />
+                    <div class="card-body">
+                        <p class="card-text ">Date: Jan 10, 2025 | Time: 10:00AM - 11:30AM | Location: Ballroom Extra
+                            Hotel</p>
+                        <h5 class="card-title text-primary">National Cyber Security Competition 2025</h5>
+                        <p class="card-text">One of the world's largest hacker conferences, exploring the latest in
+                            cybersecurity, hacking, and digital defense.</p>
+                        <button class="btn btn-outline-primary add-to-cart fw-bold">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-5 mb-4 text-black fw-bold">Event Schedule</h3>
+        <div class="row gy-4">
+
+            <!-- Event Card 3 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="./img/AI.jpg" class="card-img-top" alt="Innovate 2025"
+                        style="height: 250px; object-fit: cover;" />
+                    <div class="card-body">
+                        <p class="card-text">Date: Jan 10, 2025 | Time: 10:00AM - 11:30AM | Location: Ballroom Extra
+                            Hotel</p>
+                        <h5 class="card-title text-primary">Innovate 2025: Unleashing the Power of Change</h5>
+                        <p class="card-text">Global event showcasing real-world AI in business, health, and automation.
+                        </p>
+                        <button class="btn btn-outline-primary add-to-cart fw-bold">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm bg-light">
+                    <img src="./img/volunteer.webp" class="card-img-top" alt="GreenTech"
+                        style="height: 250px; object-fit: cover;" />
+                    <div class="card-body">
+                        <p class="card-text">Date: Jan 20, 2025 | Time: 10:00AM - 11:30AM | Location: Ballroom Extra
+                            Hotel</p>
+                        <h5 class="card-title text-primary">GreenTech: Engineering Sustainable Futures</h5>
+                        <p class="card-text">Focuses on sustainable tech in farming, energy, and climate innovation.</p>
+                        <button class="btn btn-outline-primary add-to-cart fw-bold">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="./img/machine learning.jpg" class="card-img-top" alt="Machine Learning in Robotics"
+                        style="height: 250px; object-fit: cover;" />
+                    <div class="card-body">
+                        <p class="card-text">Date: Jan 25, 2025 | Time: 10:00AM - 11:30AM | Location: Ballroom Extra
+                            Hotel</p>
+                        <h5 class="card-title text-primary">Machine Learning in Robotics</h5>
+                        <p class="card-text">Premier ML conference with breakthroughs in AI, deep learning, and
+                            robotics.</p>
+                        <button class="btn btn-outline-primary add-to-cart fw-bold">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cfa py-5 bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 justify-content-end">
+                <img src="./img/event management .jpg" alt="Don't miss a moment" class="img-fluid me-4 rounded"
+                    style="height: 300px; width: auto;" />
+                </div>
+                <div class="col-6 ">
+                    <div class="custom-row">
+                        <h2 class="fw-bold text-light text-start">Don't miss a moment</h2>
+                        <p class="lead text-light">Plan smarter. Experience better. Stay ahead with real-time event schedules, updates, and
+                            more—right at your fingertips.</p>
+                        <button class="btn btn-primary sign-up">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reusable Footer -->
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
