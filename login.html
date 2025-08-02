@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navbar/navbar.css">
 
   <style>
     body {
@@ -18,12 +20,13 @@
       font-family: 'Inter', sans-serif;
     }
     .main-content {
-      flex-grow: 1; 
+      flex-grow: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px; 
+      padding: 20px;
     }
+
     .form-box {
       width: 100%;
       max-width: 400px;
@@ -33,28 +36,34 @@
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
+
     .form-control,
     .iti {
       border-radius: 0.5rem;
       height: calc(2.25rem + 2px);
     }
+
     .form-control:focus,
-    .iti--allow-dropdown.iti--separate-dial-code .iti__flag-container:focus-within + .form-control {
+    .iti--allow-dropdown.iti--separate-dial-code .iti__flag-container:focus-within+.form-control {
       box-shadow: none;
-      border-color: #ddd; 
+      border-color: #ddd;
     }
+
     .iti {
       width: 100%;
       margin-bottom: 1rem;
     }
+
     .iti__flag-container {
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
     }
+
     .iti__selected-flag {
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
     }
+
     .iti__country-list {
       border-radius: 0.5rem;
     }
@@ -67,12 +76,18 @@
       font-weight: 600;
       border: none;
     }
+
     .btn-purple:hover {
 
       background-color: #ddd;
       color: #4A4A4A;
 
     }
+    .btn-purple a{
+      color: white;
+      text-decoration: none;
+    }
+
     .social-icon {
       display: inline-flex;
       justify-content: center;
@@ -86,18 +101,23 @@
       text-decoration: none;
       transition: background-color 0.2s, color 0.2s;
     }
+
     .social-icon:hover {
       background-color: #e0e0e0;
     }
+
     .social-icon.facebook {
       color: #1877F2;
     }
+
     .social-icon.google {
       color: #DB4437;
     }
+
     .social-icon.email {
       color: #000000;
     }
+
     .social-text {
       margin: 20px 0 10px;
       position: relative;
@@ -105,6 +125,7 @@
       color: #444444;
       font-size: 0.9rem;
     }
+
     .social-text::before,
     .social-text::after {
       content: "";
@@ -114,26 +135,30 @@
       height: 1px;
       background-color: #ddd;
     }
+
     .social-text::before {
       left: 0;
     }
+
     .social-text::after {
       right: 0;
     }
+
     .text-muted {
       color: #444444 !important;
     }
-    a {
+
+    /* a {
       color: #1877F2;
       text-decoration: none;
     }
     a:hover {
       color: #1877F2;
       text-decoration: underline;
-    }
+    } */
 
     /* Navbar */
-    .navbar {
+    /* .navbar {
       background-color: #ffffff; 
       border-bottom: 1px solid #e0e0e0; 
       padding-top: 1rem;
@@ -158,43 +183,51 @@
     }
     .navbar-toggler:focus {
       box-shadow: none;
-    }
+    } */
     /* Footer */
     .footer {
-      background-color: #f8f9fa; 
-      color: #000;
-      padding: 3rem 0;
-      border-top: 1px solid #e9ecef; 
+      background-color: #f8f9fa;
+      color: #02386E;
+      padding: 250px;
+      border-top: 1px solid #e9ecef;
     }
+
     .footer h5 {
-      color: #000;
+      color: #02386E;
       font-weight: 600;
       margin-bottom: 1rem;
     }
+
     .footer ul {
       list-style: none;
       padding: 0;
     }
+
     .footer ul li {
       margin-bottom: 0.5rem;
     }
+
     .footer ul li a {
       color: #999;
       text-decoration: none;
       transition: color 0.2s;
     }
+
     .footer ul li a:hover {
       color: #4A4A4A;
     }
+
     .footer .social-footer-icons a {
       font-size: 1.5rem;
       margin-right: 1rem;
       color: #444444;
       transition: color 0.2s;
     }
+
     .footer .social-footer-icons a:hover {
       color: #444444;
     }
+
     .footer .copyright {
       margin-top: 2rem;
       border-top: 1px solid #e9ecef;
@@ -209,21 +242,25 @@
         margin-left: 0;
         text-align: center;
       }
+
       .footer .col-md-3,
       .footer .col-md-6 {
         margin-bottom: 1.5rem;
         text-align: center;
       }
+
       .footer .social-footer-icons {
         justify-content: center;
       }
     }
   </style>
 </head>
+
 <body>
 
+  <div id="navbar"></div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="index.html">TosJoín</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -252,7 +289,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Login -->
   <div class="main-content">
@@ -265,7 +302,7 @@
         <div class="mb-3">
           <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
-        <button type="submit" class="btn btn-purple w-100">Login</button>
+        <button type="submit" class="btn btn-purple w-100"><a href="index.html">Login</a></button>
       </form>
 
       <div class="social-text">or Login with</div>
@@ -279,47 +316,16 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5 class="text-uppercase" style="font-family: Garamond;">TosJoín</h5>
-        </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Follow Us</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">Facebook</a></li>
-            <li><a href="#" class="text-muted">Instagram</a></li>
-            <li><a href="#" class="text-muted">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Contact Us</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">+855 965415351</a></li>
-            <li><a href="#" class="text-muted">tosjoin@gmail.com</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Location</h5>
-          <p class="text-muted">
-            Sangkat Boeung Kork 2 Khan Toul Kouk Phnom Penh
-          </p>
-        </div>
-      </div>
-      <div class="copyright">
-        &copy; 2025 TosJoin. All rights reserved.
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
 
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
 
   <script>
     const input = document.querySelector("#phone");
     const iti = window.intlTelInput(input, {
-      initialCountry: "kh", 
+      initialCountry: "kh",
       preferredCountries: ["kh", "us", "vn", "th"],
       separateDialCode: true,
       utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"
@@ -327,12 +333,13 @@
 
     document.getElementById("registerForm").addEventListener("submit", function (e) {
       e.preventDefault();
-      const phoneNumber = iti.getNumber(); 
+      const phoneNumber = iti.getNumber();
       const password = document.getElementById("password").value;
       alert("Phone: " + phoneNumber + "\nPassword: " + password);
-      
+
     });
   </script>
 
 </body>
+
 </html>
