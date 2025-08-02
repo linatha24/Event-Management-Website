@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // 1. Load Navbar HTML (fix path!)
-    fetch('/navbar/navbar.html') // leading slash = root-relative path
+    fetch('./navbar/navbar.html') // leading slash = root-relative path
         .then(res => {
             if (!res.ok) throw new Error('Navbar failed to load');
             return res.text();
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(err => console.error('Error loading navbar:', err));
 
     // Load footer
-    fetch('/footer/footer.html')
+    fetch('./footer/footer.html')
         .then(res => {
             if (!res.ok) throw new Error('Footer failed to load');
             return res.text();
