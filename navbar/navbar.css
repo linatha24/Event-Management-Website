@@ -6,7 +6,7 @@
   padding: 15px 30px;
   background-color: white;
   border-bottom: 1px solid #ddd;
-  position: relative; /* needed for absolute nav links on mobile */
+  position:sticky; /* needed for absolute nav links on mobile */
   z-index: 1000;
 }
 
